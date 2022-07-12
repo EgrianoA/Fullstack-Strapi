@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "order",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "price": {
+      "type": "biginteger"
+    },
+    "customer": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::customer.customer",
+      "inversedBy": "orders"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "AWAITING PAYMENT",
+        "ON PROCESS",
+        "ON DELIVERY",
+        "DONE",
+        "CANCELLED"
+      ]
+    },
+    "midtrans_orderid": {
+      "type": "string"
+    },
+    "order_details": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::order-detail.order-detail",
+      "mappedBy": "order"
+    }
+  }
+}
