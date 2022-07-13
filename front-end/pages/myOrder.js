@@ -283,17 +283,17 @@ const myOrder = () => {
                 <div className='homePage'>
                     <div className="header">
                         <Row>
-                            <Col span={8}>
+                            <Col xs={4} sm={2}>
                                 <div className="menu">
                                     <HomeOutlined onClick={() => Router.push('/')} className="homeButton" />
                                 </div>
                             </Col>
-                            <Col span={8}>
+                            <Col xs={20} sm={20}>
                                 <div align="center">
                                     <h1>Insignia Travel</h1>
                                 </div>
                             </Col>
-                            <Col span={8} />
+                            <Col xs={0} sm={2} />
                         </Row>
                         <hr className='headDivider' />
                     </div>
@@ -356,13 +356,13 @@ const myOrder = () => {
                                             return (
                                                 <div className='itemsCard'>
                                                     <Row>
-                                                        <Col xs={24} md={5} lg={5} xl={4}>
+                                                        <Col xs={24} sm={24} md={5} lg={5} xl={4}>
                                                             <img className="cartImg" src={process.env.BASE_URL + cart.img} />
                                                         </Col>
-                                                        <Col xs={24} md={11} lg={14} xl={16}>
+                                                        <Col xs={24} sm={24} md={11} lg={14} xl={16}>
                                                             <p className="cartProductName">{cart.name}</p>
                                                         </Col>
-                                                        <Col xs={24} md={8} lg={5} xl={4}>
+                                                        <Col xs={24} sm={24} md={8} lg={5} xl={4}>
                                                             <div className="cartItemPrice">
                                                                 <center>
                                                                     <Row>

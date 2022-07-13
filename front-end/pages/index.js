@@ -117,13 +117,13 @@ const Home = () => {
     <div className="homePage">
       <div className="header">
         <Row>
-          <Col xs={0} sm={8} />
-          <Col xs={12} sm={8}>
+          <Col xs={0} sm={4} />
+          <Col xs={14} sm={16}>
             <div align="center">
               <h1>Insignia Travel</h1>
             </div>
           </Col>
-          <Col xs={12} sm={8}>
+          <Col xs={10} sm={4}>
             <div className="rightIcons">
               {userLoggedIn && (
                 <div>

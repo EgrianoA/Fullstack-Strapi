@@ -130,8 +130,9 @@
     font-size: 1vw;
   }
   img {
-    max-width: 30vw;
-    max-height: 30vw;
+    width: 35vw;
+    height: 35vw;
+    object-fit: cover;
   }
   .addToCartButton {
     background-color: #0390fc;
@@ -320,19 +321,32 @@
   }
 
   .destinationDetail {
-    min-height: 30vw;
+    min-height: 80vw;
     h3 {
-      font-size: 2vw;
+      font-size: 3vw;
     }
     h4 {
-      font-size: 1.5vw;
+      font-size: 2vw;
     }
     p {
-      font-size: 1.5vw;
+      font-size: 2vw;
     }
     img {
-      max-width: 30vw;
-      max-height: 30vw;
+      margin-bottom: 5vw;
+      width: 40vw;
+      height: 40vw;
+    }
+    .addToCartButton, .removeFromCart {
+      width: 35vw;
+      height: 6vw;
+      margin-top: 2vh;
+      span {
+        font-size: 2.5vw;
+        margin-right: 2vw;
+      }
+      svg {
+        transform: scale(2);
+      }
     }
   }
 }
@@ -429,14 +443,13 @@
       font-size: 3vw;
     }
     img {
-      max-width: 40vw;
-      max-height: 40vw;
+      width: 70vw;
+      height: 50vw;
+      margin-bottom: 20px;
     }
-    .addToCartButton .removeFromCart {
+    .addToCartButton, .removeFromCart {
       width: 50vw;
       height: 10vw;
-      border: 0px;
-      border-radius: 25px;
       margin-top: 2vh;
       span {
         font-size: 3vw;
@@ -508,7 +521,7 @@
 
   .ant-modal-content {
     position: relative;
-    bottom: 15vh;
+    // bottom: 15vh;
   }
 
   .destinationDetail {
@@ -524,14 +537,14 @@
       font-size: 4vw;
     }
     img {
-      max-width: 50vw;
-      max-height: 50vw;
+      max-width: 70vw;
+      height: 50vw;
+      margin-top: 20px;
+      margin-bottom: 5vh;
     }
-    .addToCartButton .removeFromCart {
+    .addToCartButton, .removeFromCart {
       width: 50vw;
       height: 10vw;
-      border: 0px;
-      border-radius: 25px;
       margin-top: 2vh;
       span {
         font-size: 4vw;
