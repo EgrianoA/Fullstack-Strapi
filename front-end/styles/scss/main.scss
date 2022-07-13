@@ -170,7 +170,7 @@
 }
 
 .itemCard {
-  height: 40vh;
+  height: 30vw;
   position: relative;
   h3 {
     font-size: 18px;
@@ -260,7 +260,7 @@
   }
 
   .itemCard {
-    height: 600px;
+    height: 32vw;
     h3 {
       font-size: 1.5vw;
     }
@@ -280,7 +280,6 @@
 ///
 @media only screen and (max-width: 1024px) {
   .header {
-    margin-top: 2vh;
     h1 {
       font-size: 35px;
     }
@@ -301,11 +300,11 @@
   }
 
   .itemCard {
-    height: 40vh;
+    height: 40vw;
     position: relative;
     .itemImage {
-      max-width: 21vw;
-      max-height: 21vw;
+      width: 20vw;
+      height: 20vw;
     }
     h3 {
       font-size: 18px;
@@ -315,7 +314,7 @@
     }
     .cardFooter {
       .cart {
-        transform: scale(0.9);
+        transform: scale(1.2);
       }
     }
   }
@@ -371,7 +370,6 @@
       }
     }
     .rightIcons {
-      top: 5vh;
       .shoppingCartButton {
         margin-right: 4vw;
         svg {
@@ -402,14 +400,19 @@
   }
 
   .itemCard {
-    height: 60vh;
+    height: 50vw;
     .selected {
       max-width: 5vw;
       max-height: 5vw;
     }
     .itemImage {
-      max-width: 40vw;
-      max-height: 40vw;
+      width: 28vw;
+      height: 28vw;
+    }
+    .cardFooter {
+      .cart {
+        transform: scale(1.2);
+      }
     }
   }
 
@@ -472,6 +475,7 @@
 
   .header {
     .rightIcons {
+      top: 50px;
       .shoppingCartButton {
         margin-right: 10vw;
       }
@@ -486,18 +490,18 @@
   }
 
   .itemCard {
-    height: 50vh;
+    height: 80vw;
     .ant-card-body {
       padding-left: 10px;
       padding-right: 10px;
     }
     .itemImage {
-      max-width: 30vw;
-      max-height: 30vw;
+      width: 35vw;
+      height: 35vw;
     }
     .cardFooter {
       .cart {
-        transform: scale(0.5);
+        transform: scale(1.5);
       }
     }
   }
